@@ -1,4 +1,5 @@
 # Color Flipper
+![Screenshot (76)](https://github.com/ankanmaiti/color-flipper/assets/141055693/092c5147-f110-425f-8320-628070c2a654)
 
 
 ## How It Works
