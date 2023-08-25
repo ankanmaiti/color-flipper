@@ -1,0 +1,62 @@
+:root {
+    --background-color: #002d81;
+}
+
+
+body {
+    height: 100dvh;
+    display: grid;
+    place-items: center;
+
+    font-family: system-ui;
+    overflow: hidden;
+    background-color: var(--background-color);
+}
+
+
+#color-flipper {
+    display: grid;
+    place-items: center;
+}
+
+
+button {
+    all: unset;
+
+    padding: .6rem 2rem;
+    border-radius: .2rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
+    background-color: white;
+    color: var(--background-color);
+
+    font-weight: 600;
+    font-size: large;
+
+    cursor: pointer;
+}
+
+button:active {
+    scale: .99;
+}
+
+p[data-color] {
+    content: "background color: ";
+    width: max-content;
+    background-color: black;
+    color: white;
+
+    padding: .5rem 2rem;
+    border-radius: .2rem;
+
+    font-size: large;
+    text-transform: capitalize;
+}
+
+p[data-color]::after {
+    content: attr(data-color);
+    color: var(--background-color);
+
+    font-weight: bolder;
+    text-transform: lowercase;
+}
